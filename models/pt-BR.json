@@ -1,14 +1,10 @@
 {
-	"invocation": "anime jojo",
+	"invocation": "jo jo",
 	"intents": [
 		{
 			"name": "PlayRandomSoundIntent",
 			"phrases": [
-				"tocar som de jojo",
-				"tocar meme de jojo",
-				"tocar algo de jojo",
-				"tocar audio de jojo",
-				"tocar mais um"
+				"tocar som de jojo"
 			]
 		}
 	],
