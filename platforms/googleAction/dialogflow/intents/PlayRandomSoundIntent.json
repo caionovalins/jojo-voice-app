@@ -1,0 +1,5 @@
+{
+	"name": "PlayRandomSoundIntent",
+	"auto": true,
+	"webhookUsed": true
+}

@@ -1,0 +1,28 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "jojo anime",
+			"types": [],
+			"intents": [
+				{
+					"name": "PlayRandomSoundIntent",
+					"samples": [
+						"play a jojo sound"
+					]
+				},
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				}
+			]
+		}
+	}
+}
