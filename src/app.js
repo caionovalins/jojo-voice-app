@@ -74,28 +74,24 @@ const audioFiles = [
     }
 ]
 
-const suggestions = {
-    "en-US": ['Play one more'],
-    "pt-BR": ['Tocar mais um']
-}
-
 const responses = {
     "en-US": ['Here!', 'Bye'],
     "pt-BR": ['Toma!', 'Adeus']
 }
 
 app.setHandler({
+
     LAUNCH() { return this.toIntent('PlayRandomSoundIntent') },
 
     PlayRandomSoundIntent() {
         const locale = this.$request.getLocale()
         const audio = audioFiles[Math.floor(Math.random() * audioFiles.length)]
-        this.$googleAction.$mediaResponse.play(audio.url, audio.name)
-        this.$googleAction.showSuggestionChips(suggestions[locale])
         this.tell(responses[locale][0])
+        this.$googleAction.$mediaResponse.play(audio.url, audio.name)
     },
 
     END() { this.tell(responses[locale][1]) }
+
 })
 
 module.exports.app = app;
